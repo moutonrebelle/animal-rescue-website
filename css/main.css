@@ -12,13 +12,13 @@ h2 {
 
 .masthead,
 .footer {
-  background-color: #F9C152;
-  color: #022E4C;
+  background-color: #f9c152;
+  color: #022e4c;
 }
 
 .nav a {
   border-bottom: .1em solid currentColor;
-  color: #022E4C;
+  color: #022e4c;
   text-decoration: none;
 }
 
@@ -61,17 +61,22 @@ nav a:hover {
 }
 
 .chihuahua {
-  min-width:100px;
+  min-width: 100px;
 }
 
+.first-section {
+  background-color: #f9f9f9;
+}
+
+.bg-white {
+  background-color: #fff;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    background-color: #fff;
-    margin: 5px;
 }
 
-.card:hover {
+.bg-white:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
