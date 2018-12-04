@@ -28,13 +28,12 @@ h2 {
 
 nav a:hover {
   color: #fff;
-  font-weight: bold;
   width: 110px;
   background-color: #c08f2d;
 }
 
 .banner {
-  background: linear-gradient(to bottom, rgba(144, 144, 144, 0.2) 20%, rgba(14, 45, 76, 1)), url("../images/banner.jpg");
+  background: linear-gradient(to bottom, rgba(144, 144, 144, .2) 20%, rgba(14, 45, 76, 1)), url("../images/banner.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom center;
@@ -50,14 +49,27 @@ nav a:hover {
 }
 
 .button {
-    background-color: #c08f2d;
-    color: white;
-    border-color: #c08f2d;
+  background-color: #022e4c;
+  color: white;
+  border-color: #022e4c;
+}
+
+.banner .button {
+  background-color: white;
+  color: #022e4c;
+  border-color: white;
+}
+
+.banner .button:hover {
+  background-color: #f9c152;
+  color: #022e4c;
+  border-color: #f9c152;
 }
 
 .button:hover {
-  border-color: #c08f2d;
-  background-color: #022E4C;
+  border-color: #022e4c;
+  background-color: white;
+  color: #022e4c;
 }
 
 .chihuahua {
@@ -70,22 +82,23 @@ nav a:hover {
 
 .bg-white {
   background-color: #fff;
-      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2);
 }
+
 .card {
-    transition: 0.3s;
+  transition: .3s;
 }
 
 .bg-white:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .2);
 }
 
 .second-section {
-  background-color: #F9C152;
+  background-color: #f9c152;
 }
 
 h4 {
-  color: #022E4C;
+  color: #022e4c;
 }
 
 .call-to-action-01 p {
