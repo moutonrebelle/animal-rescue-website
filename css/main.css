@@ -108,3 +108,34 @@ h4 {
 footer {
   font-family: "varela round", sans-serif;
 }
+
+.story {
+  border-top: 2px solid #e2e2e2;
+  border-bottom: 2px solid #e2e2e2;
+  border-color: #f9c152;
+}
+
+.second-section-rescues {
+  background-color: #022e4c;
+  border-top: 5px solid #f9c152;
+}
+
+.second-section-rescues h3 {
+  color: #fff;
+}
+
+.animal {
+  color: #fff;
+}
+
+.contact h1 {
+  color: #022e4c;
+}
+
+.contact h2 {
+  color: #022e4c;
+}
+
+.rescues h2 {
+  color: #022e4c;
+}
