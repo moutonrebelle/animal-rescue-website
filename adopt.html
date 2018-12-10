@@ -8,13 +8,13 @@
   <link href="css/grid.css" rel="stylesheet">
   <link href="css/type.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
-  <link rel="shortcut icon" href="images/favicon.ico">
+  <link rel="shortcut icon" href="favicon.ico">
   <link rel="icon" type="image/png" href="favicon-196.png">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Varela+Round" rel="stylesheet">
 </head>
 <body>
   <ul class="skip-links">
-      <li><a href="#banner">Skip to banner</a></li>
+    <li><a href="#banner">Skip to banner</a></li>
     <li><a href="#nav">Skip to navigation</a></li>
     <li><a href="#main">Skip to main content</a></li>
     <li><a href="#footer">Skip to footer</a></li>
@@ -23,20 +23,95 @@
     <header class="masthead text-center" id="banner" role="banner" tabindex="0">
       <div class="push-1-2 gutter-2 pad-t-1-2">
         <img class="logo valign-middle island-1-4" src="images/animal-rescue-logo.svg" alt="">
-        <h1 class="ib valign-middle push-0 yotta">Animal Rescue</h1>
+        <h1 class="ib valign-middle push-none yotta">Contact Us</h1>
       </div>
-      <nav class="push-1-2 bold" role="navigation" id="nav" tabindex="0">
-        <ol class="nav list-group-inline push-0 giga">
+      <nav class="bold" role="navigation" id="nav" tabindex="0">
+        <ol class="nav list-group-inline giga pad-b-1-2 push-none">
           <li class="gutter-1-2"><a class="block pad-t-1-8 pad-b-1-8" href="index.html">Home</a></li>
           <li class="gutter-1-2"><a class="block pad-t-1-8 pad-b-1-8" href="about.html">About</a></li>
           <li class="gutter-1-2"><a class="block pad-t-1-8 pad-b-1-8" href="rescues.html">Rescues</a></li>
           <li class="gutter-1-2"><a class="current block pad-t-1-8 pad-b-1-8" href="adopt.html">Adopt</a></li>
         </ol>
       </nav>
-      <div class="banner gutter-2 text-left">
-        <div class="banner-content wrapper pad-b">
-          <h2 class="push-0 yotta push-1-2">Help an animal today!</h2>
-          <a href="adopt.html" class="btn btn-big island-1-2 button">Adopt a pet</a>
-        </div>
-      </div>
     </header>
+    <main role="main" id="main" tabindex="0">
+      <div class="sign-up push">
+        <section class="contact gutter">
+          <h2 class="giga text-left push-none pad-t">Adopt an animal today</h2>
+          <h3 class="mega text-left">Give a second change to a pet in need</h3>
+          <form class="push-0" method="POST" action="https://formspree.io/13laurameg@gmail.com">
+            <fieldset class="push-0">
+              <legend class="mega push kilo">Personal details</legend>
+              <div class="grid">
+                <div class="push unit xs-1 s-1 m-1 l-1-2 gutter-1-4">
+                  <label class="push-1-4" for="name">Name</label>
+                  <input id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="push unit xs-1 s-1 m-1 l-1-2 gutter-1-4">
+                  <label class="push-1-4" for="email">Email</label>
+                  <input id="email" type="email" placeholder="name@email.com" name="email" required>
+                  <input type="hidden" name="email" value="My subject">
+                </div>
+              </div>
+            </fieldset>
+            <fieldset class="push-0">
+              <legend class="mega push kilo">General information</legend>
+              <div class="grid">
+                <div class="push unit unit xs-1 s-1 m-1 l-1 gutter-1-4">
+                  <label class="push-1-4" for="plan">What cat of pet do you want to adopt?</label>
+                  <select id="plan" name="type-of-plan">
+                    <option>Dog</option>
+                    <option>Cat</option>
+                  </select>
+                </div>
+                <div class="push unit unit xs-1 s-1 m-1 l-1 gutter-1-4">
+                  <label class="push-1-4" for="who">Who do you want to adopt?</label>
+                  <select id="who" name="who">
+                    <option>Enzo</option>
+                    <option>Louna</option>
+                    <option>Socrate</option>
+                    <option>Bella</option>
+                    <option>Patate</option>
+                    <option>Nugget</option>
+                    <option>I am not sure yet</option>
+                  </select>
+                </div>
+              </div>
+            </fieldset>
+            <fieldset class="push-0">
+              <legend class="mega push kilo">Specifications</legend>
+              <div class="gutter-1-4">
+                <label class="push-1-4" for="animal">Why do you want to adopt an animal?</label>
+                <textarea id="animal" name="message" required></textarea>
+              </div>
+              <div class="gutter-1-4">
+                <label class="push-1-4" for="animal">Do you have experience with animals?</label>
+                <textarea id="animal" name="message" required></textarea>
+              </div>
+            </fieldset>
+            <div class="text-left pad-t gutter-1-4">
+              <a href="rescues.html" class="btn btn btn-big island-1-2 button text-center push">I want to adopt!</a>
+            </div>
+          </form>
+        </section>
+      </div>
+      <article class="second-section island-2">
+        <div class="grid">
+          <div class="unit xs-1 s-1-2 m-3-4 1-3-4 gutter-1-2">
+            <h4 class="yotta">Our Goal</h4>
+            <p>We want to offer a second chance to animals in need. We help dogs and cats that are looking for a new place called home where they can spend the rest of their life. We are hoping that we will pursue our goal for the years to come. </p>
+          </div>
+          <div class="unit xs-1 s-1-2 m-1-4 l-1-4 gutter-1-2 unit-content-center-vertical">
+            <div class="embed embed-1by1">
+              <img class="img-flex embed-item chihuahua" src="images/chihuahua.jpg" alt="chihuahua">
+            </div>
+          </div>
+        </div>
+      </article>
+    </main>
+    <footer role="contentinfo" id="footer" tabindex="0">
+      <p class="text-center island-1-2">Conception by Laura Meguerditchian</p>
+    </footer>
+  </div>
+</body>
+</html>
